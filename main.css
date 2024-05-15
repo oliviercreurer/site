@@ -1,3 +1,152 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 body {
-  background: blue;
+  background: #FFF6EF;
+  font-family: "Epilogue";
+  padding: 4em;
+  font-size: 16px;
+}
+
+p {
+  color: #726256;
+  line-height: 1.5rem;
+}
+
+a {
+  color: #4176FF;
+}
+
+/* NAV ------------ */
+
+nav {
+  /* font-family: "Epilogue"; */
+  background: #FFF6EF;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding: 60px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+nav a {
+  margin: 0 2px;
+  text-decoration: none;
+  font-family: "IBM Plex Mono";
+  font-style: italic;
+  font-size: 16px;
+  color: black;
+  padding: 12px 16px;
+}
+
+nav a:hover {
+  background: #DBD0C8;
+}
+
+.active {
+  /* font-family: "IBM Plex Mono";
+  font-style: italic;
+  font-size: 17px; */
+  color: #4176FF;
+}
+
+/* HOME ------------ */
+
+.shout {
+  animation: fadeInAnimation ease 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  font-family: "IBM Plex Mono";
+  font-weight: 200;
+  font-size: 12vh;
+  line-height: 13vh;
+  margin-top: 120px;
+  word-spacing: -1rem;
+}
+
+.shout span {
+  font-style: italic;
+}
+
+.shout a {
+  text-decoration: none;
+  border-bottom: 4px solid #4176FF;
+}
+
+.shout a:hover {
+  background: #4176FF;
+  color: white;
+}
+
+/* PORTFOLIO ------------ */
+
+#projects-container {
+  max-width: 800px;
+  margin: 160px auto;
+  animation: fadeInAnimation ease 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.project {
+  margin-bottom: 60px;
+}
+
+.p-info {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.p-info span {
+  display: block;
+}
+
+.p-title {
+  color: #4176FF;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  margin: 0 0 20px 0;
+}
+
+.p-detail {
+  display: flex;
+  flex-direction: column;
+  border-left: 4px solid #DBD0C8;
+  padding-left: 16px;
+  flex-grow: 1;
+}
+
+.label {
+  font-family: "IBM Plex Mono";
+  font-style: italic;
+  font-size: 13px;
+  line-height: 24px;
+  color: #726256;
+  margin-bottom: 6px;
+}
+
+.role {
+  font-weight: 600;
+}
+
+.p-headline {
+  color: #726256;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  font-weight: 400;
 }
