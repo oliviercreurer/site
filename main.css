@@ -3,6 +3,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  overscroll-behavior: none;
+}
+
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
