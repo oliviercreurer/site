@@ -22,10 +22,45 @@ body {
 p {
   color: #726256;
   line-height: 1.5rem;
+  max-width: 850px;
 }
 
 a {
   color: #4176FF;
+}
+
+.wistia_responsive_padding {
+  margin: 20px 0px;
+  width: 80%;
+}
+
+.narrow {
+  max-width: 800px;
+}
+
+img {
+  width: 80%;
+  margin: 24px 0;
+}
+
+.img-grp {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.img-grp img {
+  width: 100%;
+}
+
+
+
+.caption {
+  font-size: 14px;
+  font-family: "IBM Plex Mono";
+  font-style: italic;
+  opacity: 50%;
+  margin-bottom: 24px;
 }
 
 /* NAV ------------ */
@@ -81,6 +116,7 @@ nav a:hover {
 
 .shout span {
   font-style: italic;
+
 }
 
 .shout a {
@@ -91,20 +127,31 @@ nav a:hover {
 .shout a:hover {
   background: #4176FF;
   color: white;
+  cursor: grab;
 }
 
 /* PORTFOLIO ------------ */
 
 #projects-container {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 160px auto;
   animation: fadeInAnimation ease 1.5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .project {
   margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.p-intro {
+  max-width: 850px;
 }
 
 .p-info {
