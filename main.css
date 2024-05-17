@@ -17,6 +17,7 @@ body {
   font-family: "Epilogue";
   padding: 4em;
   font-size: 16px;
+  overscroll-behavior-y: contain;
 }
 
 p {
