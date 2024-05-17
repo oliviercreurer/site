@@ -218,4 +218,8 @@ nav a:hover {
   img {
     width: 100%;
   }
+  .shout {
+    font-size: 8vh;
+    line-height: 9vh;
+  }
 }
