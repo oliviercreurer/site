@@ -176,6 +176,7 @@ nav a:hover {
   border-left: 4px solid #DBD0C8;
   padding-left: 16px;
   flex-grow: 1;
+  margin-bottom: 12px;
 }
 
 .label {
@@ -196,4 +197,18 @@ nav a:hover {
   font-size: 1.25rem;
   line-height: 1.875rem;
   font-weight: 400;
+}
+
+/* MEDIA QUERIES ----------- */
+
+@media (max-width: 576px) {
+  body {
+    padding: 1em;
+  }
+  .p-info {
+    flex-direction: column;
+  }
+  img {
+    width: 100%;
+  }
 }
