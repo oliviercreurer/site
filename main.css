@@ -37,7 +37,7 @@ a {
 
 .wistia_responsive_padding {
   margin: 20px 0px;
-  width: 80%;
+  width: 110%;
 }
 
 .narrow {
@@ -45,7 +45,7 @@ a {
 }
 
 img {
-  width: 80%;
+  width: 110%;
   margin: 24px 0;
 }
 
@@ -67,10 +67,12 @@ img {
 
 .caption {
   font-size: 14px;
-  font-family: "IBM Plex Mono";
-  font-style: italic;
+  font-family: "Epilogue";
+  text-align: center;
+  line-height: 20px;
   opacity: 50%;
   margin-bottom: 24px;
+  width: 40%;
 }
 
 /* NAV ------------ */
@@ -145,7 +147,7 @@ nav a:hover {
 /* PORTFOLIO ------------ */
 
 #projects-container {
-  max-width: 1200px;
+  max-width: 800px;
   margin: 160px auto;
   animation: fadeInAnimation ease 1.5s;
   animation-iteration-count: 1;
@@ -227,5 +229,8 @@ nav a:hover {
   .shout {
     font-size: 8vh;
     line-height: 9vh;
+  }
+  .wistia_responsive_padding {
+    width: 100%;
   }
 }
