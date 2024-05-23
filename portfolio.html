@@ -28,7 +28,7 @@
           <div class="p-info">
             <div class="p-detail">
               <span class="label">Role</span>
-              <span class="role">Product Designer, CPO</span>
+              <span class="role">Product Designer, CPO, Co-founder</span>
             </div>
             <div class="p-detail">
               <span class="label">Company</span>
@@ -37,20 +37,23 @@
           </div>
           <h3 class="p-headline">Booker is a light-weight, low-fee booking engine that we’ve built directly into our larger app for tourism destinations, Whereabouts. Booker’s focus is to provide small, independent tourism businesses — many of which have limited to no digital presence — with an e-commerce solution that’s designed precisely for their unique needs while being easy to embed anywhere on the web. </h3>
         </div>
-        <p>Many of the businesses we support are reticent to adopt modern tech tools — and for good reason. Big corporate aggregators like Airbnb and Booking.com take huge cuts of their profits, and smaller platforms more tailored to tourism products are often bogged down by endless complexity.</p>
-        <p>Having relied almost exclusively on government funding, our journey to the current version of Booker has been rewarding but not without its challenges. Through a handful of iterations, various rounds of beta testing, and many conversations with small businesses, we’ve honed the product to a point where we feel it delivers a simple experience while being modular enough to support long-term development. </p>
+        <p>Many of the businesses we support are reticent to adopt modern tech tools — and for good reason. Big corporate aggregators like Airbnb and Booking.com take huge cuts of their profits, and smaller platforms more tailored to tourism products are often bogged down by endless complexity. Through a handful of iterations over the last two years, informed by various rounds of beta testing and many conversations with small businesses, we’ve honed the product to a point where we feel it delivers a delightful, simple experience while being modular enough to support long-term growth.</p>
         <script src="https://fast.wistia.com/embed/medias/ydqyvuvcn3.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:88% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_ydqyvuvcn3 seo=false videoFoam=true" style="height:100%;position:relative;width:100%">&nbsp;</div></div></div>
-        <p>Booker went through a few iterations since 2020, and each one was informed by extensive user interviews, feedback, and beta testing. We used all of this user data to continually refine and simplify the Booker product; given how short on time these tourism businesses are, it’s important that we build software that solves real-world problems for them — and quickly.</p>
-        <p>Booker is made up of two parts: one is the consumer-facing embed through which reservations are made, and the other is the admin app for businesses through which they manage their calendar, configure settings, and create sellable products. For this case study, I’ll focus on the latter.</p>
-        <p>Tourism businesses here in Canada are funky — in a good way. A single business might offer everything from accommodations, meal plans, guided tours, classes, and even chartered flights to their remote location. Though we want to support multi-product Bookers with complex dependencies in the long run, we needed to start with a model that would be easy to build and dead-simple for businesses to adopt.</p>
-        <p>In the current version, businesses create sellable products — either accommodations, events, or fee-based products — in their Booker Admin app, and each one gets its own embeddable Booker instance. The data model we’ve created for these sellable products is simple, such that a business owner can create a product and get it online with minutes.</p>
+        <p>Booker is made up of two parts: one is the consumer-facing embed through which reservations are made (as shown in the video above), and the other is the admin app for businesses through which they manage their calendar and bookings, configure their settings, and create sellable products (for now, we support the creation of accommodation, event-based, and fee-based products). For this case study, I’ll focus on product creation user flow.</p>
+        <!-- <p>Tourism businesses here in Canada are funky — in a good way. A single business might offer everything from accommodations, meal plans, guided tours, classes, and even chartered flights to their remote location. Though we want to support multi-product Bookers with complex dependencies in the long run, we needed to start with a model that would be easy to build and dead-simple for businesses to adopt.</p> -->
+        <p>Every sellable product that a business creates gets its own embeddable Booker instance. This is what makes our model unique: instead of driving traffic to a single source such as their website, businesses can embed their products anywhere they choose and even share their embeds with third-party partners to broaden their reach. And in the interest of simplicity, the data model we’ve created for these sellable products allows a business owner to create one and start capturing bookings within minutes.</p>
         <img class="img-shadow"src="images/product-root.png" alt="">
-        <p>↑ In the Booker Admin app, business owners can see an overview of their sellable products. From here, they can also create new ones, as shown in the screens below.</p>
+        <p>In the Products tab, business owners can see an overview of all their sellable products. From here, they can also create new ones. The screens below showcase parts of the flow a user would follow to create an accommodation product. The user flow is broken down into clear steps, and at each one, the user can see a live preview of their Booker being rendered on the right-hand side.</p>
         <img class="img-shadow"src="images/product-info.png" alt="">
-        <p>In this example, we're looking at the creation flow for an accommodation product. The flow is broken down into clear steps, and at each one, the user can see a live preview of their Booker being rendered on the right-hand side.</p>
+        <p>As shown in the modals below, users can easily create bedrooms with specific attributes, custom pricing tiers, and simple upsell opportunities.</p>
+        <img src="images/modal-detail.png" alt="">
+        <p>Rich content like photos and videos can easily be uploaded to better showcase the product.</p>
         <img class="img-shadow"src="images/product-media.png" alt="">
+        <p>We've also built a Stripe integration, allowing users to easily create (or connect) a Stripe account without having to abandon the product creation flow.</p>
         <img class="img-shadow"src="images/product-payments.png" alt="">
+        <p>Lastly, once all the steps in the flow have been completed, an embed code can be generated and customized.</p>
         <img class="img-shadow"src="images/product-embed.png" alt="">
+        <p>Tourism business owners love to give their customers amazing experiences; what they don't love is having to invest an inordinate amount of time in admin work. With Booker, our goal is to help these folks thrive in a crowded market while saving them time through simple, easy-to-use solutions.</p>
       </section>
 
       <!-- COMPASS -->
