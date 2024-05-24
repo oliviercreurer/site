@@ -63,8 +63,6 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-  max-width: 1000px;
-  margin: 0 auto;
 }
 
 .img-grp img {
@@ -291,7 +289,7 @@ nav a:hover {
     margin-top: 32px;
   }
   .img-grp {
-    grid-template-columns: 1fr;
     margin: 0 24px;
+    grid-template-columns: 1fr;
   }
 }
