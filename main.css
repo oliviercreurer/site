@@ -56,12 +56,21 @@ img {
 
 .img-grp {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .img-grp img {
   width: 100%;
+  margin: 0;
+  border: 1px solid #edddd2;
+}
+
+.img-grp img:hover {
+  filter: grayscale(100%) invert(100%);
+  cursor: pointer;
 }
 
 .img-shadow {
@@ -220,6 +229,10 @@ nav a:hover {
   font-weight: 400;
 }
 
+#music-grid {
+  margin-top: 80px;
+}
+
 /* MEDIA QUERIES ----------- */
 
 @media (max-width: 576px) {
@@ -260,5 +273,12 @@ nav a:hover {
     width: 100%;
     padding: 70% 0 0 0;
     margin-bottom: 32px;
+  }
+  #music-grid {
+    margin-top: 140px;
+  }
+  .img-grp {
+    grid-template-columns: 1fr;
+    margin: 0 24px;
   }
 }
