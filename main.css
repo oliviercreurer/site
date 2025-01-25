@@ -61,8 +61,27 @@ h4 {
     line-height: 26px;
 }
 
+h5 {
+    font-size: 16px;
+    line-height: 24px;
+}
+
 a {
     text-decoration: none;
+}
+
+.mono {
+    font-family: "IBM Plex Mono";
+    font-size: 14px;
+    line-height: 22px;
+}
+
+img {
+    width: 100%;
+}
+
+.img-border {
+    border: 1px solid var(--grey-800);
 }
 
 section {
@@ -233,6 +252,72 @@ section {
 .prod-slug p {
     font-size: 14px;
     line-height: 20px;
+}
+
+/* Gallery */
+#graphics {
+    width: 100%;
+}
+
+.graphics-menu {
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.graphics-nav img {
+    width: 24px;
+    height: 24px;
+    padding: 12px;
+    cursor: pointer;
+    border: 1px solid var(--grey-800);
+}
+
+.gallery {
+    margin-top: 32px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    overflow-x: scroll;
+    overflow-y: none;
+}
+
+.img-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    align-items: center;
+    /* display: grid;
+    grid-template-columns: auto auto auto;
+    flex: none; */
+}
+
+.img-container h5 {
+    margin-bottom: 8px;
+}
+
+.img-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery div img {
+    filter: grayscale(0);
+    transition: filter 0.2s;
+    width: 50%;
+    max-height: auto;
+}
+
+.gallery div img:hover {
+    filter: grayscale(100);
+    cursor: pointer;
+}
+
+.gallery::-webkit-scrollbar {
+    display: none;
 }
 
 /* Media Queries */
