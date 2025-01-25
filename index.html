@@ -1,25 +1,137 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <title></title>
-  </head>
-  <body>
-    <nav id="navbar">
-      <a href="index.html" class="active">Home</a>
-      <a href="portfolio.html" class="">Portfolio</a>
-      <a href="music.html" class="">Music</a>
-    </nav>
-    <div class="shout">
-      Olivier Creurer is a <span>designer</span> and <span>musician</span> based in Montreal. <a href="mailto:olvr@hey.com">Get in touch</a>
-    </div>
-    <script src="main.js" type="text/javascript"></script>
-  </body>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="main.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Outfit:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+        <title>Olivier Creurer</title>
+    </head>
+    <body>
+        <section id="hero">
+            <div id="hero-content">
+                <h1>Olivier Creurer</h1>
+                <div id="links">
+                    <a href="https://github.com/oliviercreurer" target="_blank">Github</a>
+                    <a href="https://www.linkedin.com/in/oliviercreurer/" target="_blank"
+                        >LinkedIn</a
+                    >
+                    <a href="https://creurer.bandcamp.com/music" target="_blank">Bandcamp</a>
+                </div>
+                <p class="p-large">
+                    Hey! I’m Olivier, a product designer based in Montreal. With a background in
+                    art, support, and management, I bring a unique set of skills and sensibilities
+                    to building software. I believe that great design is driven by consistency,
+                    clarity, and aesthetic elegance — foundational principles that provide users
+                    with simple, effective, and delightful solutions.
+                </p>
+                <a href="mailto:olvr@hey.com" class="button button-dark">Contact</a>
+            </div>
+            <img class="hero-img" src="images/profile-pic.png" />
+        </section>
+        <section id="product">
+            <h3 class="section-title">Product</h3>
+            <div id="prod-showcase">
+                <div class="prod-container">
+                    <div class="prod-sidebar">
+                        <div class="count-badge badge-1">01</div>
+                        <div class="separator"></div>
+                    </div>
+                    <div class="prod-overview">
+                        <h4>Whereabouts</h4>
+                        <div class="prod-details">
+                            The Tourism Technology Co.<br />
+                            Chief Product Officer<br />
+                            2022-Present
+                        </div>
+                        <div class="prod-slug">
+                            <p>Software for the modern tourism destination.</p>
+                        </div>
+                        <a href="#" class="button button-light">View</a>
+                    </div>
+                </div>
+                <div class="prod-container">
+                    <div class="prod-sidebar">
+                        <div class="count-badge badge-2">02</div>
+                        <div class="separator"></div>
+                    </div>
+                    <div class="prod-overview">
+                        <h4>Podcast Player</h4>
+                        <div class="prod-details">
+                            Wistia <br />
+                            Product Designer <br />
+                            2019-2020 <br />
+                        </div>
+                        <div class="prod-slug">
+                            <p>Expanding the Wistia video player to the audio realm.</p>
+                        </div>
+                        <a href="#" class="button button-light">View</a>
+                    </div>
+                </div>
+                <div class="prod-container">
+                    <div class="prod-sidebar">
+                        <div class="count-badge badge-3">03</div>
+                        <div class="separator"></div>
+                    </div>
+                    <div class="prod-overview">
+                        <h4>Compass</h4>
+                        <div class="prod-details">
+                            Self-initiated <br />
+                            Developer & Designer <br />
+                            2018-Present <br />
+                        </div>
+                        <div class="prod-slug">
+                            <p>An experimental, open-source sampler and looper.</p>
+                        </div>
+                        <a href="#" class="button button-light">View</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section id="graphics">
+            <div class="graphics-menu">
+                <h3 class="section-title">Selected Graphics</h3>
+            </div>
+
+            <div class="gallery">
+                <div class="img-container">
+                    <img src="images/pont.PNG" />
+                    <div class="img-details">
+                        <h5>Le Pont du Nord</h5>
+                        <span class="mono">Poster / Self-initiated / 2023</span>
+                    </div>
+                </div>
+                <div class="img-container">
+                    <img src="images/Concentrics 2.jpeg" />
+                    <div class="img-details">
+                        <h5>Concentrics</h5>
+                        <span class="mono">Record cover / 2020</span>
+                        <p>
+                            Cover (+ alt) for the sixth installment of glia's
+                            <a
+                                href="https://ifizu.bandcamp.com/album/concentrics-six"
+                                target="_blank"
+                                >concentrics</a
+                            >
+                            series.
+                        </p>
+                    </div>
+                </div>
+                <div class="img-container">
+                    <img src="images/Night Counting Portfolio.png" />
+                    <div class="img-details">
+                        <h5>The Night of Counting the Years</h5>
+                        <span class="mono">Self-initiated / 2023</span>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <script src="main.js" type="text/javascript"></script>
+    </body>
 </html>
