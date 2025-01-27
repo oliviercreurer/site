@@ -74,6 +74,18 @@ a {
     font-family: "IBM Plex Mono";
     font-size: 14px;
     line-height: 22px;
+    font-weight: 500;
+    color: var(--grey-400);
+}
+
+.caption {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 500;
+    display: inline-block;
+    text-align: center;
+    color: var(--grey-400);
+    margin-bottom: 32px;
 }
 
 img {
@@ -84,8 +96,13 @@ img {
     border: 1px solid var(--grey-800);
 }
 
+.img-inline {
+    margin: 32px 0 12px 0;
+}
+
 section {
     max-width: 850px;
+    width: 100%;
 }
 
 .section-title {
@@ -210,6 +227,13 @@ section {
     margin-bottom: 12px;
 }
 
+.count-badge-large {
+    height: 48px;
+    width: 48px;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
 .badge-1 {
     background: var(--pink-light);
 }
@@ -252,6 +276,27 @@ section {
 .prod-slug p {
     font-size: 14px;
     line-height: 20px;
+}
+
+/* Case Studies */
+
+.prod-intro {
+    width: 100%;
+}
+
+.prod-intro h1 {
+    margin-bottom: 24px;
+}
+
+.prod-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 40px 0px 20px 0px;
+}
+
+.prod-nav h1 {
+    width: 100%;
 }
 
 /* Gallery */
