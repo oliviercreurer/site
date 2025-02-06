@@ -380,6 +380,9 @@ wistia-player {
 
 .slider {
     width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .img-box {
@@ -394,18 +397,39 @@ wistia-player {
 }
 
 .gallery-buttons {
+    position: absolute;
     display: flex;
-    gap: 16px;
-    align-items: center;
-    justify-content: start;
-    flex-direction: row;
+    width: 105%;
+    justify-content: space-between;
+    padding: 0;
+    top: 45%;
 }
 
-#backBtn,
+.slider-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: #ffffff;
+    border: 1px solid var(--grey-800);
+}
+
+.slider-btn:hover {
+    border: 2px solid var(--grey-800);
+}
+/* #backBtn,
 #nextBtn {
     width: 32px;
     height: 32px;
     cursor: pointer;
+} */
+
+#back-button,
+#next-button {
+    width: 24px;
+    height: 24px;
 }
 
 .music-grid {
