@@ -38,6 +38,14 @@ body {
     animation-fill-mode: forwards;
 }
 
+footer {
+    max-width: 800px;
+    width: 100%;
+}
+
+footer .caption {
+}
+
 h1,
 h2,
 h3,
@@ -338,6 +346,9 @@ section {
 
 wistia-player {
     margin: 12px 0;
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 /* Case Studies */
