@@ -122,6 +122,13 @@ p a {
     text-align: left;
 }
 
+.icon {
+    display: inline;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
 img {
     width: 100%;
 }
@@ -206,6 +213,17 @@ section {
 
 .button-inline {
     margin-top: 32px;
+}
+
+.pdf-dl {
+    color: var(--blue-mid);
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.pdf-dl:hover {
+    color: var(--grey-800);
 }
 
 /* HERO SECTION */
