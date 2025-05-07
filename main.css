@@ -481,6 +481,18 @@ wistia-player {
     filter: hue-rotate(180deg);
 }
 
+/* Server */
+
+.server {
+    font-family: 'IBM Plex Mono';
+}
+
+.server code {
+    background: var(--grey-100);
+}
+
+
+
 /* Keyframes */
 
 @keyframes fadeInAnimation {

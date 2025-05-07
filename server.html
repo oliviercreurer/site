@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="main.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Outfit:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+        <title>Media Log</title>
+    </head>
+    <body>
+        <section class="server">
+            <ol>
+                <li><strong>Create User. </strong>If you want access, ping me and I'll create a Jellyfin user in my instance and then share your credentials with you; you'll use them in a few steps.</li>
+                <li><strong>Install Tailscale. </strong>Install the Tailscale app on your TV; it's in the Google Play store. Once installed, open the app. You'll be prompted first to allow Tailscale VPN access to your TV — accept to continue. Next, you should see a screen with a QR code to log in. Beneath the QR code should be a message about manually connecting to a machine with an alphanumeric code. Send this code to me and wait.</li>
+                <li><strong>Install Jellyfin. </strong>Install the Jellyfin app on your TV. When first opened, you should see a screen with an option to connect to a server. Enter the following IP address: <code>100.116.212.42:8096</code> You should now see an indication on the screen that you've connected to the <code>omm-2</code> server</li>
+                <li><strong>Add Jellyfin user. </strong> You should see an <code>Add Account</code> button on the screen. Click that, and then enter the login credentials I created for you in Step 1.</li>
+            </ol>
+        </section>
+    </body>
+</html>
