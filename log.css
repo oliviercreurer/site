@@ -8,4 +8,15 @@ body {
     font-family: 'IBM Plex Mono';
     font-size: 16px;
     color: #222222;
+    font-weight: 500;
+    display: flex;
+}
+
+p {
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
 }
