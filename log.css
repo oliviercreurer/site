@@ -10,13 +10,27 @@ body {
     color: #222222;
     font-weight: 500;
     display: flex;
+    justify-content: center;
+    margin: 3em;
 }
 
 p {
-    padding: 0;
+    margin: 0;
 }
 
 ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
+}
+
+.log-year {
+    width: 100%;
+    justify-content: center;
+}
+
+.truncate {
+    white-space: nowrap; /* Prevents text from wrapping to the next line */
+    overflow: hidden;    /* Hides content that overflows the container */
+    text-overflow: ellipsis; /* Displays an ellipsis (...) when text overflows */
 }
