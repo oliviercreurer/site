@@ -6,126 +6,33 @@
         <link rel="stylesheet" href="main.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Outfit:wght@100..900&display=swap"
-            rel="stylesheet"
-        />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Stack+Sans+Headline:wght@200..700&family=Stack+Sans+Notch:wght@200..700&family=Stack+Sans+Text:wght@200..700&display=swap" rel="stylesheet">
         <title>Olivier Creurer</title>
+        <script>
+            // Apply stored theme before paint to avoid a flash
+            (function () {
+                var theme = localStorage.getItem("theme");
+                if (theme === "light" || theme === "dark") {
+                    document.documentElement.style.colorScheme = theme;
+                }
+            })();
+        </script>
     </head>
     <body>
-        <section id="hero">
-            <div id="hero-content">
-                <h1>Olivier Creurer</h1>
-                <div id="links">
-                    <a href="https://github.com/oliviercreurer" target="_blank">Github</a>
-                    <a href="https://www.linkedin.com/in/oliviercreurer/" target="_blank"
-                        >LinkedIn</a
-                    >
-                    <a href="https://creurer.bandcamp.com/music" target="_blank">Bandcamp</a>
-                </div>
-                <p class="p-large">
-                    Hey! I’m Olivier, a product designer based in Montreal. With a background in
-                    art, support, and management, I bring a unique set of skills and sensibilities
-                    to building software. I believe that great design is driven by consistency,
-                    clarity, and aesthetic elegance —  foundational principles that help create
-                    accessible and delightful products.
-                </p>
-                <a href="mailto:olvr@hey.com" class="button button-dark">Contact</a>
-            </div>
-            <img class="hero-img" src="images/profile-pic.png" />
+        <button type="button" class="contact">Contact</button>
+        <section class="hero">
+            <span class="base"><strong>Olivier Creurer</strong> is a <span class="title">product designer</span> based in Montréal. <strong>Case Studies:</strong> 
+            <a href="https://google.com"><span class="highlight" style="color: var(--blue-highlight);">Importer</span></a>, 
+            <a href="https://google.com"><span class="highlight" style="color: var(--yellow-highlight);">Directory</span></a>,
+            <a href="https://google.com"><span class="highlight" style="color: var(--red-highlight);">Modlist</span></a>, and
+            <a href="https://google.com"><span class="highlight" style="color: var(--green-highlight);">Norns</span></a>.
         </section>
-        <section id="product">
-            <h3 class="section-title">Product</h3>
-            <div id="prod-showcase">
-                <div class="prod-container">
-                    <div class="prod-sidebar">
-                        <div class="count-badge badge-1">01</div>
-                        <div class="separator"></div>
-                    </div>
-                    <div class="prod-overview">
-                        <h4>Whereabouts</h4>
-                        <div class="prod-details">
-                            The Tourism Technology Co.<br />
-                            Chief Product Officer<br />
-                            2022-Present
-                        </div>
-                        <div class="prod-slug">
-                            <p>Cutting-edge software for the modern tourism destination.</p>
-                        </div>
-                        <a href="whereabouts.html" class="button button-light">View</a>
-                    </div>
-                </div>
-                <div class="prod-container">
-                    <div class="prod-sidebar">
-                        <div class="count-badge badge-2">02</div>
-                        <div class="separator"></div>
-                    </div>
-                    <div class="prod-overview">
-                        <h4>Podcast Player</h4>
-                        <div class="prod-details">
-                            Wistia <br />
-                            Product Designer <br />
-                            2019-2020 <br />
-                        </div>
-                        <div class="prod-slug">
-                            <p>Expanding the Wistia video player to the audio realm.</p>
-                        </div>
-                        <a href="wistia.html" class="button button-light">View</a>
-                    </div>
-                </div>
-                <div class="prod-container">
-                    <div class="prod-sidebar">
-                        <div class="count-badge badge-3">03</div>
-                        <div class="separator"></div>
-                    </div>
-                    <div class="prod-overview">
-                        <h4>Norns Apps</h4>
-                        <div class="prod-details">
-                            Self-initiated <br />
-                            Developer & Designer <br />
-                            2018-Present <br />
-                        </div>
-                        <div class="prod-slug">
-                            <p>An experimental, open-source sampler and looper.</p>
-                        </div>
-                        <a href="norns.html" class="button button-light">View</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="graphics">
-            <div class="graphics-header">
-                <h3 class="section-title">Selected Graphics</h3>
-            </div>
-            <div class="slider">
-                <div class="gallery-buttons">
-                    <div class="slider-btn" onClick="prev()">
-                        <img src="images/arrow-back.svg" id="back-button" />
-                    </div>
-                    <div class="slider-btn" onClick="next()">
-                        <img src="images/arrow-next.svg" id="next-button" />
-                    </div>
-                </div>
-                <div class="img-box">
-                    <img src="images/gallery01-pont.png" alt="" class="slider-img" />
-                </div>
-            </div>
-        </section>
-
-        <!--  -->
-
-        <!-- <section id="music">
-            <h3 class="section-title">Music</h3>
-            <div class="music-grid">
-                <a href="https://creurer.bandcamp.com/album/obstacle-theory" target="_blank""><img src="images/music-ot.JPG"></a>
-                <a href="https://creurer.bandcamp.com/album/bits" target="_blank""><img src="images/music-bits.JPG"></a>
-                <a href="https://creurer.bandcamp.com/album/achilles-corridor" target="_blank""><img src="images//music-achilles.JPG"></a>
-                <a href="https://creurer.bandcamp.com/album/i-dont-need-anything-from-here" target="_blank""><img src="images/music-idnafh.JPG"></a>
-            </div>
-        </section> -->
 
         <footer>
-            <span class="caption">© 2025 | Olivier Creurer</span>
+            <!-- <span class="caption">© 2025 | Olivier Creurer</span> -->
+            <button type="button" class="theme-toggle" aria-label="Toggle color theme">Theme</button>
         </footer>
 
         <script src="main.js" type="text/javascript"></script>
