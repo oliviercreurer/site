@@ -14,25 +14,45 @@
             // Apply stored theme before paint to avoid a flash
             (function () {
                 var theme = localStorage.getItem("theme");
-                if (theme === "light" || theme === "dark") {
-                    document.documentElement.style.colorScheme = theme;
+                if (theme !== "light" && theme !== "dark") {
+                    theme = window.matchMedia("(prefers-color-scheme: dark)").matches
+                        ? "dark"
+                        : "light";
                 }
+                document.documentElement.style.colorScheme = theme;
+                document.documentElement.dataset.theme = theme;
             })();
         </script>
     </head>
     <body>
-        <button type="button" class="contact">Contact</button>
         <section class="hero">
-            <span class="base"><strong>Olivier Creurer</strong> is a <span class="title">product designer</span> based in Montréal. <strong>Case Studies:</strong> 
+            <nav class="nav-container">
+                <button type="button" class="contact">Contact</button>
+                <div class="nav-end">
+                    <div class="social-links">
+                        <a href="https://github.com/oliviercreurer" target="_blank">Github</a>
+                        <span>·</span>
+                        <a href="https://google.com" target="_blank">LinkedIn</a>
+                    </div>
+                    <button type="button" class="theme-toggle" aria-label="Toggle color theme">
+                        <svg class="theme-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                            <path d="M16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16C0 7.16344 7.16344 0 16 0ZM16 4C9.37258 4 4 9.37258 4 16H28C28 9.37258 22.6274 4 16 4Z" />
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+            <div class="welcome-text">
+                <span class="base"><strong>Olivier Creurer</strong> is a <span class="title">product designer</span> based in Montréal. <strong>Case Studies:</strong> 
             <a href="https://google.com"><span class="highlight" style="color: var(--blue-highlight);">Importer</span></a>, 
-            <a href="https://google.com"><span class="highlight" style="color: var(--yellow-highlight);">Directory</span></a>,
+            <a href="directory.html"><span class="highlight" style="color: var(--yellow-highlight);">Directory</span></a>,
             <a href="https://google.com"><span class="highlight" style="color: var(--red-highlight);">Modlist</span></a>, and
             <a href="https://google.com"><span class="highlight" style="color: var(--green-highlight);">Norns</span></a>.
+            </div>
+            
         </section>
 
         <footer>
             <!-- <span class="caption">© 2025 | Olivier Creurer</span> -->
-            <button type="button" class="theme-toggle" aria-label="Toggle color theme">Theme</button>
         </footer>
 
         <script src="main.js" type="text/javascript"></script>

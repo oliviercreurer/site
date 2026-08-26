@@ -12,9 +12,14 @@
     --background-inverse: light-dark(#100F0F, #DFD4C2);
 
     --blue-highlight: #444CDF;
+    --blue-text: light-dark(#262CAF, #A5AAFF);
+    --blue-bg: light-dark(#B4B8F5, #0F1577);
+
     --yellow-highlight: #DFB431;
     --green-highlight: #128049;
     --red-highlight: #E86F5E;
+
+
     
 }
 
@@ -25,21 +30,19 @@ html {
 body {
     background: var(--background);
     color: var(--text);
+    padding: 6vw;
 }
 
 .theme-toggle {
-    position: fixed;
-    bottom: 1.5rem;
-    right: 1.5rem;
     appearance: none;
     border: none;
     background: transparent;
     color: var(--text);
-    font-family: "JetBrains Mono", monospace;
-    font-weight: 600;
-    font-size: 0.75rem;
     cursor: pointer;
-    padding: 0.5rem 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     opacity: 0.7;
     transition: opacity 0.2s ease;
 }
@@ -48,12 +51,33 @@ body {
     opacity: 1;
 }
 
+.theme-icon {
+    display: block;
+    width: 1.25rem;
+    height: 1.25rem;
+    transform: rotate(0deg);
+    transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.theme-icon path {
+    fill: currentColor;
+}
+
+html[data-theme="dark"] .theme-icon {
+    transform: rotate(180deg);
+}
+
 strong {
     font-weight: 700;
 }
 
+
+
 .hero {
-    padding: 6vw;
+    
+}
+
+.welcome-text {
     font-family: "Stack Sans Notch", sans-serif;
     font-size: calc(1rem + 7vw);
     font-weight: 200;
@@ -76,4 +100,104 @@ strong {
 
 .hero a:hover {
     background: var(--background-inverse);
+}
+
+.social-links a:hover {
+    background: transparent;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.contact {
+    font: inherit;
+    background: var(--background);
+    color: var(--text);
+    border: 2px solid var(--text);
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.contact:hover {
+    background: var(--background-inverse);
+    color: var(--text-inverse);
+}
+
+.social-links {
+    color: var(--text);
+}
+
+.nav-end {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.social-links a {
+    position: relative;
+    color: inherit;
+    text-decoration: none;
+}
+
+.social-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 1.5px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.social-links a:hover::after {
+    transform: scaleX(1);
+}
+
+.tag-bar {
+    margin-bottom: 24px;
+}
+
+.tag {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.75rem;
+    padding: 4px 8px;
+    color: var(--blue-text);
+    background: var(--blue-bg);
+}
+
+.study-header h3 {
+    font-size: 5rem;
+    font-family: "Stack Sans Notch", sans-serif;
+    font-weight: 500;
+    margin: 20px 0px;
+}
+
+.tagline {
+    font-family: "Stack Sans Notch", sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.article-content {
+    display: block;
+    max-width: 800px;
+}
+
+.article-content p {
+    font-family: "Stack Sans Notch", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 200;
+    line-height: 2rem; 
 }

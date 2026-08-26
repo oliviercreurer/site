@@ -45,9 +45,9 @@ function getPreferredTheme() {
 
 function applyTheme(theme, { persist = false } = {}) {
   document.documentElement.style.colorScheme = theme;
+  document.documentElement.dataset.theme = theme;
   if (persist) localStorage.setItem("theme", theme);
   if (themeToggle) {
-    themeToggle.textContent = theme === "dark" ? "Light" : "Dark";
     themeToggle.setAttribute(
       "aria-label",
       theme === "dark" ? "Switch to light theme" : "Switch to dark theme"
