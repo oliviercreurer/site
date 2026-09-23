@@ -23,22 +23,7 @@
                 document.documentElement.dataset.theme = theme;
             })();
         </script>
-        <script>
-            // Hold the entrance animation until web fonts are ready,
-            // with a timeout so slow fonts never keep the page hidden
-            (function () {
-                var root = document.documentElement;
-                root.classList.add("reveal-pending");
-                function start() {
-                    root.classList.remove("reveal-pending");
-                }
-                window.addEventListener("load", function () {
-                    if (document.fonts) document.fonts.ready.then(start, start);
-                    else start();
-                });
-                setTimeout(start, 3000);
-            })();
-        </script>
+        <script src="reveal.js"></script>
     </head>
     <body>
         <section class="hero hero-reveal">
