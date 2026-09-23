@@ -8,7 +8,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Stack+Sans+Headline:wght@200..700&family=Stack+Sans+Notch:wght@200..700&family=Stack+Sans+Text:wght@200..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Outfit:wght@100..900&family=Stack+Sans+Headline:wght@200..700&family=Stack+Sans+Notch:wght@200..700&family=Stack+Sans+Text:wght@200..700&display=swap" rel="stylesheet">
         <title>Olivier Creurer</title>
         <script>
             // Apply stored theme before paint to avoid a flash
@@ -23,31 +23,46 @@
                 document.documentElement.dataset.theme = theme;
             })();
         </script>
+        <script>
+            // Hold the entrance animation until web fonts are ready,
+            // with a timeout so slow fonts never keep the page hidden
+            (function () {
+                var root = document.documentElement;
+                root.classList.add("reveal-pending");
+                function start() {
+                    root.classList.remove("reveal-pending");
+                }
+                window.addEventListener("load", function () {
+                    if (document.fonts) document.fonts.ready.then(start, start);
+                    else start();
+                });
+                setTimeout(start, 3000);
+            })();
+        </script>
     </head>
     <body>
-        <section class="hero">
+        <section class="hero hero-reveal">
+            
+            <div class="welcome-text">
+                <span class="base" style="color: var(--text-light);"><strong>Olivier Creurer</strong> is a <span class="title">product designer</span> based in Montréal. <strong>Case Studies:</strong> 
+            <a href="https://google.com"><span class="highlight" style="--highlight: var(--blue-highlight); --i: 0;">Importer</span></a>, 
+            <a href="directory.html"><span class="highlight" style="--highlight: var(--yellow-highlight); --i: 1;">Directory</span></a>,
+            <a href="https://google.com"><span class="highlight" style="--highlight: var(--red-highlight); --i: 2;">Modlist</span></a>, and
+            <a href="https://google.com"><span class="highlight" style="--highlight: var(--green-highlight); --i: 3;">Norns</span></a>.
+            </div>
+
             <nav class="nav-container">
-                <button type="button" class="contact">Contact</button>
                 <div class="nav-end">
                     <div class="social-links">
                         <a href="https://github.com/oliviercreurer" target="_blank">Github</a>
                         <span>·</span>
                         <a href="https://google.com" target="_blank">LinkedIn</a>
+                        <span>·</span>
+                        <a href="https://google.com" target="_blank">Graphics</a>
                     </div>
-                    <button type="button" class="theme-toggle" aria-label="Toggle color theme">
-                        <svg class="theme-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-                            <path d="M16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16C0 7.16344 7.16344 0 16 0ZM16 4C9.37258 4 4 9.37258 4 16H28C28 9.37258 22.6274 4 16 4Z" />
-                        </svg>
-                    </button>
                 </div>
+                <button type="button" class="contact">Contact</button>
             </nav>
-            <div class="welcome-text">
-                <span class="base"><strong>Olivier Creurer</strong> is a <span class="title">product designer</span> based in Montréal. <strong>Case Studies:</strong> 
-            <a href="https://google.com"><span class="highlight" style="color: var(--blue-highlight);">Importer</span></a>, 
-            <a href="directory.html"><span class="highlight" style="color: var(--yellow-highlight);">Directory</span></a>,
-            <a href="https://google.com"><span class="highlight" style="color: var(--red-highlight);">Modlist</span></a>, and
-            <a href="https://google.com"><span class="highlight" style="color: var(--green-highlight);">Norns</span></a>.
-            </div>
             
         </section>
 
